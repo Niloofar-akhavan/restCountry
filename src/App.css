@@ -1,0 +1,62 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+}
+
+
+body:not(.dark) {
+  --bg: hsl(0, 0%, 98%);
+  --text: hsl(200, 15%, 8%);
+  --element: hsl(0, 0%, 100%);
+}
+
+
+body.dark {
+  --bg: hsl(207, 26%, 17%);
+  --text: hsl(0, 0%, 100%);
+  --element: hsl(209, 23%, 22%);
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: var(--element);
+  color: var(--text);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
